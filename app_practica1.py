@@ -8,6 +8,10 @@ app = Flask(__name__)
 def index():
     return 'App Funcionando!'
 
+@app.route('/holamundo/')
+def holamundo():
+    return 'HOLA MUNDO'
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
